@@ -4,10 +4,13 @@ getline(cin, s);
 stringstream strm(s);
 string word;
 while (strm >> word) {
-    int n = word.size();
-    for (int i = n - 1; i >= 0; --i) {
-        cout << word[i];
+    int i = 0, j = word.size() - 1;
+    while (i < j) {
+        char ch = word[i];
+        word[i] = word[j];
+        word[j] = ch;
+        i++, j--;
     }
-    cout << " ";
+    cout << word << " ";
 }
 cout << '\n';
