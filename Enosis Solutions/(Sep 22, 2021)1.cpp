@@ -1,0 +1,3 @@
+/*
+Given a left aligned string asked to make it center aligned.
+*/
