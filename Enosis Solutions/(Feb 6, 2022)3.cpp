@@ -1,11 +1,5 @@
 /*
 Given a postfix notation. Build the expression tree.
-
-Enter postfix expression : ab*c/ef/g*+k+xy*-
-Inorder Traversal: a*b/c+e/f*g+k-x*y
-Preorder Traversal: -++/*abc*/efgk*xy
-Postorder Traversal: ab*c/ef/g*+k+xy*-
-
 */
 
 #include<bits/stdc++.h>
@@ -91,3 +85,9 @@ int main() {
 
     return 0;
 }
+
+
+Enter postfix expression : ab*c/ef/g*+k+xy*-
+Inorder Traversal: a*b/c+e/f*g+k-x*y
+Preorder Traversal: -++/*abc*/efgk*xy
+Postorder Traversal: ab*c/ef/g*+k+xy*-
