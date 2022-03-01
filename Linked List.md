@@ -137,6 +137,10 @@ Practice:
 - Practice using Stuckty
     - [linked list values](https://structy.net/problems/linked-list-values)
     - [sum list](https://structy.net/problems/sum-list) 
+    - [linked list find](https://structy.net/problems/linked-list-find)
+    - [get node value](https://structy.net/problems/get-node-value)
+    - [reverse list](https://structy.net/problems/reverse-list)
+    - [zipper lists](https://structy.net/problems/zipper-lists)
 
 - Basic questions:
     - [707. Design Linked List](https://leetcode.com/problems/design-linked-list/)
