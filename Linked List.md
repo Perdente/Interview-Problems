@@ -1,4 +1,5 @@
 # Linked List 
+![singly linked list](https://miro.medium.com/max/700/1*elJncKhH_P9oQglfI1aVQA.png)
 
 - Each node object must hold at least two pieces of information. 
 	1. the node must contain the list item itself (i.e. data field). 
