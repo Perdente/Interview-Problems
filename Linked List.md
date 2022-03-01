@@ -23,7 +23,7 @@ if (head == NULL) {
 }
 ```
 
-- Printing values in Linked List
+- Printing values from Linked List
 ```c++
 node *temp;
 temp = head;
