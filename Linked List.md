@@ -111,6 +111,7 @@ Reference:
 
 - [Leetcode Introduction to Linked List](https://leetcode.com/explore/learn/card/linked-list/)
 - [Singly-Linked list in JavaScript](https://medium.com/@1991dharapatel/singly-linked-list-in-javascript-aafc71e0cf73)
+- [Linked Lists for Technical Interviews - Full Course](https://www.youtube.com/watch?v=Hj_rA0dhr2I)
 
 
 Practice:
