@@ -134,6 +134,10 @@ Reference:
 
 Practice:
 
+- Practice using Stuckty
+    - [linked list values](https://structy.net/problems/linked-list-values)
+    - [sum list](https://structy.net/problems/sum-list) 
+
 - Basic questions:
     - [707. Design Linked List](https://leetcode.com/problems/design-linked-list/)
     - [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
