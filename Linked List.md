@@ -2,19 +2,37 @@
 ![singly linked list](https://miro.medium.com/max/700/1*elJncKhH_P9oQglfI1aVQA.png)
 
 - Each node object must hold at least two pieces of information. 
-	1. the node must contain the list item itself (i.e. data field). 
-	2. each node must hold a reference to the next node.
+	1. the node must contain the list item itself (i.e. _data_ field). 
+	2. each node must hold a reference to the _next_ node.
 
 ## Tips and Template
 
-- Traverse a linked list
+- Adding node to a linked list
 
-    ```python
-    node = root
-    while node:
-        print(node.val)
-        node = node.next
-    ```
+```c++
+node *temp = new node;
+temp -> data = n;
+temp -> next = NULL;
+
+if (head == NULL) {
+    head = temp;
+    tail = temp;
+} else {
+    tail -> next = temp;
+    tail = tail -> next;
+}
+```
+
+- Printing values in Linked List
+```c++
+node *temp;
+temp = head;
+while (temp != NULL) {
+    cout << temp -> data << "--> ";
+    temp = temp -> next;
+}
+cout << "NULL";
+```
 
 - When we talk about linked list, we are normally talk about singly linked list. There is also a Doubly Linked list defined as follows:
 
