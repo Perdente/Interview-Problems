@@ -15,26 +15,30 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-struct node
-{
-    int data;
-    node *next;
-};
 
-class linked_list
+class MyLinkedList
 {
 private:
+    struct node
+    {
+        int val;
+        node *next;
+        node (int value) {
+            val = value;
+            next = nullptr;
+        }
+    };
+
     node *head, *tail;
+    int size;
 public:
-    linked_list() {
-        head = NULL;
-        tail = NULL;
+    MyLinkedList() {
+        head = nullptr;
+        tail = nullptr;
+        size = 0;
     }
     void add_node(int n) {
-        node *temp = new node;
-        temp -> data = n;
-        temp -> next = NULL;
-
+        node *temp = new node(n);
         if (head == NULL) {
             head = temp;
             tail = temp;
@@ -42,26 +46,141 @@ public:
             tail -> next = temp;
             tail = tail -> next;
         }
+        size++;
     }
     void print()  {
         node *temp;
         temp = head;
         while (temp != NULL) {
-            cout << temp -> data << "--> ";
+            cout << temp -> val << "--> ";
             temp = temp -> next;
         }
-        cout << "NULL";
+        cout << "NULL\n";
+        cout << size << '\n';
+    }
+    int get(int index) {
+        int i = 0;
+        node *temp = head;
+        while (temp != NULL) {
+            if (i++ == index) return temp -> val;
+            temp = temp -> next;
+        }
+        return -1;
+    }
+    void addAtHead(int val) {
+        node *temp = new node(val);
+        temp -> next = head;
+        head = temp;
+        size++;
+    }
+
+    void addAtTail(int val) {
+        node *temp = new node(val);
+        tail -> next = temp;
+        tail = temp;
+        size++;
+    }
+    void addAtIndex(int index, int val) {
+        if (index > size) return;
+        if (index == 0) {addAtHead(val); return;}
+        else if (index == size) {addAtTail(val); return;}
+        else {
+            node *temp = new node(val);
+            node *cur = head;
+            int i = 0;
+            while (cur != NULL) {
+                if (i++ == index - 1) {
+                    temp -> next = cur -> next;
+                    cur -> next = temp;
+                }
+                cur = cur -> next;
+            }
+        }
+        size++;
+        // cout << "loser\n";
+    }
+    void deleteAtIndex(int index) {
+        if (!(0 <= index and index < size)) return;
+        if (index == 0) {
+            node *temp = head;
+            head = head -> next;
+            delete temp;
+        } else if (index == size - 1) {
+            node *cur = head;
+            node *prev = NULL;
+            while (cur -> next != NULL) {
+                prev = cur;
+                cur = cur -> next;
+            }
+            delete cur;
+            tail = prev;
+            tail -> next = NULL;
+        }
+
+        else {
+            node *cur = head;
+            int i = 0;
+            while (cur -> next != NULL) {
+                if (i++ == index - 1) {
+                    node *temp = cur -> next -> next;
+                    delete cur -> next;
+                    cur -> next = temp;
+                }
+                cur = cur -> next;
+            }
+        }
+        size--;
     }
 };
 int main() {
-    linked_list a;
-    a.add_node(1);
+    MyLinkedList a;
     a.add_node(2);
     a.add_node(3);
+    a.add_node(5);
+    a.print();
+    a.addAtIndex(2, 4);
+    a.print();
+    a.addAtHead(1);
+    a.print();
+    a.addAtTail(6);
+    a.print();
+    a.addAtIndex(0,0);
+    a.print();
+    a.addAtIndex(7,7);
+    a.print();
+    cout << a.get(3) << '\n';
+    a.deleteAtIndex(3);
+    a.print();
+    a.deleteAtIndex(6);
+    a.print();
+    a.deleteAtIndex(5);
     a.print();
     return 0;
 }
-// output : 1--> 2--> 3--> NULL
+	
+output:
+/*
+2--> 3--> 5--> NULL
+3
+2--> 3--> 4--> 5--> NULL
+4
+1--> 2--> 3--> 4--> 5--> NULL
+5
+1--> 2--> 3--> 4--> 5--> 6--> NULL
+6
+0--> 1--> 2--> 3--> 4--> 5--> 6--> NULL
+7
+0--> 1--> 2--> 3--> 4--> 5--> 6--> 7--> NULL
+8
+3
+0--> 1--> 2--> 4--> 5--> 6--> 7--> NULL
+7
+0--> 1--> 2--> 4--> 5--> 6--> NULL
+6
+0--> 1--> 2--> 4--> 5--> NULL
+5
+
+*/
 ```
 
 </ul>
