@@ -7,7 +7,7 @@
 - [617. Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)
 - [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 - [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
-- []()
+- [120. Triangle](https://leetcode.com/problems/triangle/)
 - []()
 - []()
 - []()
