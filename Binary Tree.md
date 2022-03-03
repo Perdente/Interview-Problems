@@ -1,4 +1,4 @@
-#Table of content
+# Table of content
 
 ### Problems
 - [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)
