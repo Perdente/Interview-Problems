@@ -9,7 +9,7 @@
 - [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 - [120. Triangle](https://leetcode.com/problems/triangle/)
 - [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
-- []()
+- [96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)
 - []()
 - []()
 - []()
