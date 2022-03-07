@@ -1,5 +1,10 @@
 ![](https://lamfo-unb.github.io/img/Sorting-algorithms/Complexity.png)
 
+
+<details>
+<summary>Code</summary>
+<ul>
+    
 ```c++
 #include<bits/stdc++.h>
 using namespace std;
@@ -72,6 +77,9 @@ signed main() {
 }
 
 ```
+
+</ul>
+</details>
 
 Ref : 
 - [Course](https://academy.shahjalalshohag.com/course/a-complete-guideline-to-competitive-programming-phase-1#table-of-contents)
