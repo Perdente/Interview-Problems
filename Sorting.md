@@ -10,7 +10,6 @@
 using namespace std;
 #define int long long int
 
-
 void bubbleSort(vector<int> &v) {
     int n = v.size();
     for (int i = 0; i < n; ++i) {
@@ -54,6 +53,46 @@ void countingSort(vector<int> v) {
 
 }
 
+void mergeSort(vector<int> &v, int left, int right) {
+    if (left >= right) return;
+    int mid = left + (right - left) / 2;
+
+    mergeSort(v, left, mid);
+    mergeSort(v, mid + 1, right);
+
+    vector<int> leftSorted, rightSorted;
+
+    for (int i = left; i <= mid; ++i) leftSorted.push_back(v[i]);
+    for (int i = mid + 1; i <= right; ++i) rightSorted.push_back(v[i]);
+
+    int l_idx = 0, r_idx = 0, pos = left;
+    while (l_idx < (int)leftSorted.size() or r_idx < (int)rightSorted.size()) {
+        if (l_idx == (int) leftSorted.size()) {
+            v[pos++] = rightSorted[r_idx++];
+        } else if (r_idx == (int) rightSorted.size()) {
+            v[pos++] = leftSorted[l_idx++];
+        } else if (leftSorted[l_idx] < rightSorted[r_idx]) {
+            v[pos++] = leftSorted[l_idx++];
+        } else {
+            v[pos++] = rightSorted[r_idx++];
+        }
+    }
+}
+
+void insertSort(vector<int> v) {
+    int n = v.size();
+    for (int i = 1; i < n; ++i) {
+        int key = v[i];
+        int j = i - 1;
+        while (j >= 0 and key < v[j]) {
+            v[j + 1] = v[j];
+            j--;
+        }
+        v[j + 1] = key;
+    }
+    for (auto val: v) cout << val << " ";
+        cout << '\n';
+}
 
 void malena() {
     int n; cin >> n;
@@ -62,6 +101,9 @@ void malena() {
     // bubbleSort(v);
     // selectionSort(v);
     // countingSort(v);
+    // mergeSort(v, 0, n - 1);
+    insertSort(v);
+
 }
 
 signed main() {
