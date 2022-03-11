@@ -8,7 +8,12 @@ Infix  : 2 + 3 (Operator is in the middle of Operands)
 Prefix : + 2 3 (Operator is before the Operands)
 Postfix: 2 3 + (Operator is after the operands)
 */
+/*
+Procedure -
+. If operator pop out two pointers from stack and put operator between them
+. Otherwise create a new pointer and push it in the stack
 
+*/
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -38,8 +43,8 @@ node *pop() {
 }
 void create_expr_tree(string &suffix) {
     node *newl, *ptr1, *ptr2;
-    char symbol = suffix[0];
-    for (int i = 1; symbol != NULL; ++i) {
+    for (int i = 0; i < suffix.size(); ++i) {
+        char symbol = suffix[i];
         if (isOperator(symbol)) {
             ptr1 = pop();
             ptr2 = pop();
@@ -55,7 +60,6 @@ void create_expr_tree(string &suffix) {
             newl -> right = NULL;
             push(newl);
         }
-        symbol = suffix[i];
     }
 }
 
@@ -95,7 +99,7 @@ int main() {
 }
 
 
-Enter postfix expression : ab*c/ef/g*+k+xy*-
-Inorder Traversal: a*b/c+e/f*g+k-x*y
-Preorder Traversal: -++/*abc*/efgk*xy
-Postorder Traversal: ab*c/ef/g*+k+xy*-
+// Enter postfix expression : ab*c/ef/g*+k+xy*-
+// Inorder Traversal: a*b/c+e/f*g+k-x*y
+// Preorder Traversal: -++/*abc*/efgk*xy
+// Postorder Traversal: ab*c/ef/g*+k+xy*-
