@@ -3,6 +3,12 @@ Given a postfix notation. Build the expression tree.
 */
 
 // https://www.youtube.com/watch?v=WHs-wSo33MM
+/*
+Infix  : 2 + 3 (Operator is in the middle of Operands)
+Prefix : + 2 3 (Operator is before the Operands)
+Postfix: 2 3 + (Operator is after the operands)
+*/
+
 
 #include<bits/stdc++.h>
 using namespace std;
