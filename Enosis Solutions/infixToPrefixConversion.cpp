@@ -1,3 +1,22 @@
+/*
+Infix to Prefix::::
+
+1. Scan the infix expression from right to left(for this just reverse the expression).
+2. If the scanned character is an operand add it to answer string.
+3. Else,
+	i) If the precedence if the scanned operator is lower than the precedence of the 
+	top of the stack or the stack is empty push it in stack.
+	ii) Else, pop all the operators from stack which are lower in precedence or
+	left_associative. 
+	iii) After doing that push the scanned operator to the stack. If you encounter 
+	parenthesis while poping then stop there and push the scanned operator in the stack.
+4. If scanned character is ')' push it in stack.
+5. If scanned character is '(' pop from stack until a ')' is encountered and discard both of 'em
+6. Repeat steps 2 - 6 until infix operation is scanned.
+7. Pop and add the operators to answer string until it's empty.
+8. Reverse answer string.
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
