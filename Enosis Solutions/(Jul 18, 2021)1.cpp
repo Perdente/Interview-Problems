@@ -1,6 +1,7 @@
 /*Given a list of tree node. Generate the full tree using parent and child ID.*/
 
-
+// https://www.geeksforgeeks.org/construct-a-binary-tree-from-parent-array-representation/
+// https://www.youtube.com/watch?v=BuM5rSaMeVM
 
 
 
