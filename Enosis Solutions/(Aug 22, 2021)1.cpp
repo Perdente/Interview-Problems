@@ -19,3 +19,19 @@ while (i < j) {
     i++, j--;
 }
 cout << s << '\n';
+
+/*
+C# code - 
+using System;
+class HelloWorld {
+  static void Main() {
+    string s = Console.ReadLine();
+    Console.WriteLine(s + "\n");
+    char[] charArray = s.ToCharArray();
+    Array.Reverse(charArray);
+    string ans = new string(charArray);
+    Console.WriteLine(ans + "\n");
+  }
+}
+
+*/
