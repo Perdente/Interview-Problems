@@ -63,14 +63,36 @@ string infixToPostfix(string expression) {
     return postfix;
 }
 
+int calculate(int left, int right, char ch) {
+    if (ch == '+') return left + right;
+    if (ch == '-') return left - right;
+    if (ch == '*') return left * right;
+    if (ch == '/') return left / right;
+    return pow(left, right);
+}
+
+int evaluatePostfixExpression(string postfix) {
+    stack<int> st;
+    for (int i = 0; i < postfix.size(); ++i) {
+        char ch = postfix[i];
+        if (isOperand(ch)) {
+            st.push(ch - '0');
+        } else {
+            int right = st.top();
+            st.pop();
+            int left = st.top();
+            st.pop();
+            st.push(calculate(left, right, ch));
+        }
+    }
+    return st.top();
+}
+
 int main() {
     string expression;
     cin >> expression;
-    cout << infixToPostfix(expression) << '\n';
-
+    string postfix = infixToPostfix(expression);
+    cout << postfix << '\n';
+    cout << evaluatePostfixExpression(postfix) << '\n';
     return 0;
 }
-
-// input:K+L-M*N+(O^P)*W/U/V*T+Q
-// output:KL+MN*-OP^W*U/V/T*+Q+
-
