@@ -34,4 +34,23 @@ class HelloWorld {
   }
 }
 
+
+using System;
+class HelloWorld {
+  static void Main() {
+    string s = Console.ReadLine();
+    Console.WriteLine(s + "\n");
+    char[] charArray = s.ToCharArray();
+    int i = 0, j = s.Length - 1;
+    while (i < j) {
+        char temp = charArray[i];
+        charArray[i] = charArray[j];
+        charArray[j] = temp;
+        i++; j--;
+    }
+    string ans = new string(charArray);
+    Console.WriteLine(ans + "\n");
+  }
+}
+
 */
