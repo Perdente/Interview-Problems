@@ -14,3 +14,29 @@ while (strm >> word) {
     cout << word << " ";
 }
 cout << '\n';
+
+
+
+
+/*
+using System;
+class HelloWorld {
+  static void Main() {
+    string line = Console.ReadLine();
+    foreach (var str in line.Split(' ')) {
+        Console.Write(str + " ");
+        char[] charArray = str.ToCharArray();
+        int i = 0, j = str.Length - 1;
+        while (i < j) {
+            char ch = charArray[i];
+            charArray[i] = charArray[j];
+            charArray[j] = ch;
+            i++; j--;
+        }
+        Console.WriteLine(charArray);
+    }
+  }
+}
+
+
+*/
