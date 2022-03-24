@@ -38,5 +38,17 @@ class HelloWorld {
   }
 }
 
-
+Input: Hello madam. How are you loser? You fucking king of shit.
+Output: 
+Hello olleH
+madam. .madam
+How woH
+are era
+you uoy
+loser? ?resol
+You uoY
+fucking gnikcuf
+king gnik
+of fo
+shit. .tihs
 */
