@@ -78,6 +78,30 @@ Output -
 
 */
 
+/*
+using System;
+class HelloWorld {
+  static void Main() {
+    int n = 5; 
+    for (int i = 0; i < n; ++i) {
+        string space = new string(' ', n - i + 1);
+        Console.Write(space);
+        for (int j = 0; j <= i; ++j) {
+            string s = pascal_triangle(i, j).ToString();
+            Console.Write(s + " ");
+        }
+        Console.WriteLine();
+    }
+  }
+  private static int pascal_triangle (int row, int col) {
+    if (row == col || col == 0) return 1;
+    return pascal_triangle(row - 1, col - 1) + pascal_triangle(row - 1, col); 
+  }
+}
+
+
+*/
+
 
 
 
