@@ -27,3 +27,37 @@ void malena() {
         }
     }
 }
+
+
+/*
+
+
+using System;
+class HelloWorld {
+  static void Main() {
+      string text = Console.ReadLine();
+      string[] res = text.Split(" $ ");
+      foreach(var st in res) {
+          Console.WriteLine(string.Format("{0}", centeredString(st, 100)));
+      }
+  }
+    static string centeredString(string s, int width)
+    {
+        if (s.Length >= width)
+        {
+            return s;
+        }
+    
+        int leftPadding = (width - s.Length) / 2;
+        int rightPadding = width - s.Length - leftPadding;
+    
+        return new string(' ', leftPadding) + s + new string(' ', rightPadding);
+    }
+}
+Input: hello world $ How are you? $ Is it cold there?
+Output: 
+                                            hello world                                             
+                                            How are you?                                            
+                                         Is it cold there?                       
+
+*/
