@@ -47,3 +47,33 @@ public:
         return slow;
     }
 };
+
+/*
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+using System;
+class HelloWorld {
+  static void Main() {
+    int[] arr = {1, 2, 5, 3, 4, 2};
+    int slow = 0, fast = 0;
+    while (true) {
+        slow = arr[slow];
+        fast = arr[arr[fast]];
+        if (slow == fast) break;
+    }
+    int slow2 = 0;
+    while (true) {
+        slow = arr[slow];
+        slow2 = arr[slow2];
+        if (slow == slow2) break;
+    }
+    Console.WriteLine(slow);
+  }
+}
+*/
