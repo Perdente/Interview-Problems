@@ -10,7 +10,7 @@
 - [Longest K unique characters substring](https://practice.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1)
 - [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 - [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
-- []()
+- [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
 - []()
 - []()
 - []()
