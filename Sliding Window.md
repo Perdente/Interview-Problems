@@ -7,7 +7,7 @@
 - [First negative integer in every window of size k](https://practice.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1#)
 - [Count Occurences of Anagrams](https://practice.geeksforgeeks.org/problems/count-occurences-of-anagrams5839/1#)
 - [Sliding Window Maximum](https://www.interviewbit.com/problems/sliding-window-maximum/#)
-- []()
+- [Longest K unique characters substring](https://practice.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1)
 - []()
 - []()
 - []()
