@@ -18,6 +18,7 @@
 - [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 - [572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
 - [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+- [Path Sum](https://leetcode.com/problems/path-sum/)
 
 
 
