@@ -22,4 +22,4 @@
 
 
 
-n.b: Download [Github math display](https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda?hl=en) if you don't have render item.
+Download [Github math display](https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda?hl=en) if you don't have render item.
