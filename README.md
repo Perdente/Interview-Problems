@@ -16,3 +16,10 @@
 
 ## LeetCode
 [75 Blind Solutions](https://github.com/Perdente/Leetcode/blob/main/Leetcode%20BLIND-75%20Solutions.md)
+
+
+
+
+
+
+n.b: Download [Github math display](https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda?hl=en) if you don't have render item.
